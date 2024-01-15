@@ -1,0 +1,42 @@
+.container {
+    background: #f8f9fa;
+    border-radius: 4px;
+    display: inline-flex;
+    line-height: 1;
+    margin: 0 0 10px 10px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 11px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    box-sizing: border-box;
+
+    .lemmaInfo {
+        margin-right: 6px;
+        flex: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        .lemmaTitle {
+
+        }
+        .lemmaDesc {
+            color: #666;
+        }
+    }
+    
+    .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        flex: none;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.link {
+            &:hover {
+                color: #5c7ce7;
+            }
+        }
+    }
+}

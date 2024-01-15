@@ -1,0 +1,29 @@
+.container {
+    background: #fff;
+    border: 1px solid #5c7ce7;
+    border-radius: 4px;
+    color: #333;
+    padding: 11px 10px;
+
+    .listWrap {
+        font-size: 12px;
+        margin-top: 8px;
+        max-height: 162px;
+        overflow: auto;
+        padding-right: 15px;
+        .item {
+            line-height: 27px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

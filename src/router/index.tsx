@@ -3,6 +3,7 @@ import React from 'react'
 import ManageLayout from '@/layouts/ManageLayout'
 import { createBrowserRouter } from 'react-router-dom'
 import ManagePage from '@/pages/manage'
+import LemmaPage from '@/pages/lemma'
 
 const router = createBrowserRouter([
   {
@@ -21,17 +22,12 @@ const router = createBrowserRouter([
             path: 'list',
             element: <ManagePage />,
           },
-          //   {
-          //     path: 'star',
-          //     element: <Star />,
-          //   },
-          //   {
-          //     path: 'trash',
-          //     element: <Trash />,
-          //   },
         ],
       },
-
+      {
+        path: 'lemma',
+        element: <LemmaPage />,
+      },
       {
         // 没有命中任何路由 一般写在最后 兜底
         path: '*',
